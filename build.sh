@@ -86,9 +86,7 @@ PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
 	--disable-ffplay \
 	--disable-ffserver \
 	--disable-doc \
-	--disable-network \
 	--disable-devices \
-	--disable-protocols \
 	--enable-protocol=file \
 	--enable-protocol=pipe \
 	--enable-protocol=tee \
