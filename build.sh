@@ -42,6 +42,8 @@ if [[ "$TRAVIS_EVENT_TYPE" == 'cron' ]] || [[ `git --no-pager log -1 --oneline` 
 		git tag -a "$FFMPEG_LATEST_TAG" -m "${MSG[@]}"
 	fi
 
+	echo $SSH_REPO
+	
 	# Push updated repo and tags
 	git push "$SSH_REPO" master --tags
 
